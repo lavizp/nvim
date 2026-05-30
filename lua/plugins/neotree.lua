@@ -6,12 +6,18 @@ return {
         ["<space>"] = "open",
       },
     },
+
     filesystem = {
+      bind_to_cwd = true,
+
       filtered_items = {
         visible = true,
         hide_dotfiles = false,
         hide_gitignored = false,
-        use_libuv_file_watcher = true,
+      },
+
+      follow_current_file = {
+        enabled = false,
       },
     },
   },
