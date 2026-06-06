@@ -4,6 +4,7 @@
 ---@diagnostic disable: undefined-global
 if vim.fn.has("win32") == 1 then
   vim.opt.shell = "pwsh"
+  vim.opt.clipboard = "unnamedplus"
   vim.opt.shellcmdflag =
     "-NoLogo -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;"
   vim.opt.shellredir = "-RedirectStandardOutput %s -NoNewWindow -Wait"
