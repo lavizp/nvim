@@ -12,3 +12,8 @@ if vim.fn.has("win32") == 1 then
   vim.opt.shellquote = ""
   vim.opt.shellxquote = ""
 end
+-- Enable line wrapping
+vim.opt.wrap = true
+
+-- Indent wrapped lines
+vim.opt.breakindent = true
